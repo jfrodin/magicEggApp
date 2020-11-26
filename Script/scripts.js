@@ -4,6 +4,7 @@ output.innerHTML = slider.value;
 
 slider.oninput = function() {
     output.innerHTML = this.value;
+    document.getElementById("eggAnswer").innerHTML = "";
 }
 
 function calculateEggTime(){
