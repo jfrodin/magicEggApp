@@ -1,5 +1,13 @@
+let slider = document.getElementById("weightSlider");
+let output = document.getElementById("eggWeight");
+output.innerHTML = slider.value;
+
+slider.oninput = function() {
+    output.innerHTML = this.value;
+}
+
 function calculateEggTime(){
-    let eggWeight = document.getElementById("eggWeight").value;
+    let eggWeight = document.getElementById("weightSlider").value;
     if (eggWeight <=50 ) {
         eggSize = "smallEgg"
     }
@@ -9,7 +17,7 @@ function calculateEggTime(){
     else {
         eggSize = "largeEgg"
     }
-    if (document.getElementById('softBoiled').checked) {
+    if (document.getElementById("softBoiled").checked) {
         eggStyle ="softBoiled";
         if (eggSize === "smallEgg") {
             document.getElementById("eggAnswer").innerHTML = "6 minutes";
@@ -22,7 +30,7 @@ function calculateEggTime(){
         }
         
     }
-    else if (document.getElementById('mediumBoiled').checked) {
+    else if (document.getElementById("mediumBoiled").checked) {
         eggStyle ="mediumBoiled";
         if (eggSize === "smallEgg") {
             document.getElementById("eggAnswer").innerHTML = "8 minutes";

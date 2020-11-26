@@ -3,8 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>The Magic Egg App</title>
-        <link rel="stylesheet" href="./Style/style.css">
-        <script src="./Script/scripts.js"></script>
+        <link rel="stylesheet" href="./Style/style.css">      
         <link rel="icon" href="egg.png">
     </head>
     <body>
@@ -15,10 +14,10 @@
             </header>
             <section>
                 <p>All times are based on that the water is boling when submerging your egg.</p>
-                <article>
+                <main>
                     <form>
-                        <label for="eggWeight">Weight of your egg:
-                        <input type="number" id="eggWeight" value=40 min=40 max=110>g</label>
+                        <p>Weight of your egg in grams: <span id="eggWeight"></span></p>
+                        <input type="range" id="weightSlider" value=40 min=40 max=110>
                         <p>Choose your perfered style of egg</p>
                         <input type="radio" id="softBoiled" name="eggStyle" value="softBoiled" checked>
                         <label for="softBoiled">Soft boiled</label>
@@ -28,13 +27,13 @@
                         <label for="hardBoiled">Hard boiled</label>
                         <input type="button" class="button" onclick="calculateEggTime()" value=Calculate!>
                     </form>
-                    <p>You need to boil your egg for: </p>
-                        <p id=eggAnswer></p>
-                </article>
+                    <p>You need to boil your egg for: <span id=eggAnswer></span></p>
+                </main>
             </section>
             <footer>
             
             </footer>
         </main>
     </body>
+    <script src="./Script/scripts.js"></script>
 </html>
