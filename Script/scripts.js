@@ -8,6 +8,7 @@ slider.oninput = function() {
 }
 
 function calculateEggTime(){
+    let cookingTime = 0;
     let eggWeight = document.getElementById("weightSlider").value;
     if (eggWeight <=50 ) {
         eggSize = "smallEgg"
@@ -21,38 +22,47 @@ function calculateEggTime(){
     if (document.getElementById("softBoiled").checked) {
         eggStyle ="softBoiled";
         if (eggSize === "smallEgg") {
-            document.getElementById("eggAnswer").innerHTML = "6 minutes";
+            cookingTime = 6;
+            document.getElementById("eggAnswer").innerHTML = cookingTime + " minutes";
         }
         else if (eggSize === "mediumEgg") {
-            document.getElementById("eggAnswer").innerHTML = "7 minutes"; 
+            cookingTime = 7;
+            document.getElementById("eggAnswer").innerHTML = cookingTime + " minutes"; 
         }
         else {
-            document.getElementById("eggAnswer").innerHTML = "8 minutes";
+            cookingTime = 8;
+            document.getElementById("eggAnswer").innerHTML = cookingTime + " minutes";
         }
         
     }
     else if (document.getElementById("mediumBoiled").checked) {
         eggStyle ="mediumBoiled";
         if (eggSize === "smallEgg") {
-            document.getElementById("eggAnswer").innerHTML = "8 minutes";
+            cookingTime = 8;
+            document.getElementById("eggAnswer").innerHTML = cookingTime + " minutes";
         }
         else if (eggSize === "mediumEgg") {
-            document.getElementById("eggAnswer").innerHTML = "9 minutes"; 
+            cookingTime = 9;
+            document.getElementById("eggAnswer").innerHTML = cookingTime + " minutes"; 
         }
         else {
-            document.getElementById("eggAnswer").innerHTML = "10 minutes";
+            cookingTime = 10;
+            document.getElementById("eggAnswer").innerHTML = cookingTime + " minutes";
         }
     }
     else {
         eggStyle ="hardBoiled";
         if (eggSize === "smallEgg") {
-            document.getElementById("eggAnswer").innerHTML = "10 minutes";
+            cookingTime = 10;
+            document.getElementById("eggAnswer").innerHTML = cookingTime + " minutes";
         }
         else if (eggSize === "mediumEgg") {
-            document.getElementById("eggAnswer").innerHTML = "11 minutes"; 
+            cookingTime = 11;
+            document.getElementById("eggAnswer").innerHTML = cookingTime + " minutes"; 
         }
         else {
-            document.getElementById("eggAnswer").innerHTML = "12 minutes";
+            cookingTime = 12;
+            document.getElementById("eggAnswer").innerHTML = cookingTime + " minutes";
         }
     }
 }
@@ -75,8 +85,4 @@ hard boiled
 small egg - 10 minutes
 medium egg - 11 minutes
 large egg - 12 minutes
-
-
-
-
 */
