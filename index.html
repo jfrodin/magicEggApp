@@ -11,29 +11,49 @@
         
     </head>
     <body>
-        <main id="page" class="container">
-            <header id="header" class="container">
-                <h1>The Magic Egg App</h1>
-                <p class="slogan">Your best companion for getting perfect eggs, every time.</p>
+        <main id="page">
+            <header id="header" class="container-fluid">
+                <div class="row text-center">
+                    <div class="col-sm">
+                        <img src="/egg.png" class="">
+                        <h1 class="display-1">The Magic Egg App</h1>
+                        <p><em> - Your best companion for getting perfect eggs, every time -</em></p>
+                    </div>
+                </div>
             </header>
-            <section id="app" class="container">
-                <p>All times are based on that the water is boling when submerging your egg.</p>
-                    <form>
-                        <p>Weight of your egg in grams: <span id="eggWeight"></span></p>
+            <section id="app" class="container-fluid">
+                <div class="row text-center">
+                    <div class="col-sm">
+                        <p>All times are based on that the water is boling when submerging your egg.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <form>
+                        <h6>Weight of your egg in grams: <span id="eggWeight"></span></h6>
                         <input type="range" id="weightSlider" value=40 min=40 max=110>
-                        <p>Choose your perfered style of egg</p>
+                    </div>
+                    <div class="col-sm">
+                        <h6>Choose your perfered style of egg</h6>
                         <input type="radio" id="softBoiled" name="eggStyle" value="softBoiled" checked>
-                        <label for="softBoiled">Soft boiled</label>
+                        <label for="softBoiled">Soft boiled</label><br>
                         <input type="radio" id="mediumBoiled" name="eggStyle" value="mediumBoiled">
-                        <label for="mediumBoiled">Medium boiled</label>
+                        <label for="mediumBoiled">Medium boiled</label><br>
                         <input type="radio" id="hardBoiled" name="eggStyle" value="hardBoiled">
                         <label for="hardBoiled">Hard boiled</label>
-                        <input type="button" class="button" onclick="calculateEggTime()" value=Calculate!>
-                    </form>
-                    <p>You need to boil your egg for: <span id=eggAnswer></span></p>
+                        </form>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm text-center">
+                            <input type="button" class="button" onclick="calculateEggTime()" value=Calculate!>
+                            <p class="display-5"><span id=eggAnswer></span></p>
+                        </div>
+                    </div>             
+                </div>
+                    
             </section>
-            <footer id="footer" class="container">
-            <p>Created by Joakim Frödin</p>
+            <footer id="footer" class="container-fluid">
+ 
         </main>
     </body>
     <script src="./Script/scripts.js"></script>

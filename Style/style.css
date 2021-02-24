@@ -1,36 +1,23 @@
-.container {
-    width: 50%;
-}
-#page {
-    margin-top: 2%;
-}
-
-#header {
-    text-align: center;
-    background-color: #fed1be;
-    border-radius:  100px 100px 0px 0px;
-    margin-bottom: 1%;
-}
 #app {
-    text-align: left;
-    background-color: #abe1fd;
-    border-radius: 3px;
-    margin-bottom: 1%;
-
+    width: 65vw;
+}
+#header {
+    margin-top: 15vh;
 }
 
-#footer {
+.center-text {
     text-align: center;
-    background-color: #f0e0a2;
-    border-radius: 0px 0px 100px 100px;
-    font-size:smaller;
+}
+.right-text {
+    text-align: right;
 }
 
-h1 {
-    -webkit-text-stroke: 1px #000000;
-    color: transparent;
+/*Blackish: #202020
 
-}
-.slogan {
-    font-style: italic;
-}
+Dark Grey: #3F3F3F
+
+Medium Grey: #707070
+
+Egg Yellow: #FFD6C
+
+White: #FFFFFF*/
