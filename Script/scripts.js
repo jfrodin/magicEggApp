@@ -8,7 +8,8 @@ slider.oninput = function() {
 }
 
 function calculateEggTime(){
-    let cookingTime = 0;
+    let minutes = 0;
+    let seconds = 0;
     let eggWeight = document.getElementById("weightSlider").value;
     if (eggWeight <=50 ) {
         eggSize = "smallEgg"
@@ -22,47 +23,47 @@ function calculateEggTime(){
     if (document.getElementById("softBoiled").checked) {
         eggStyle ="softBoiled";
         if (eggSize === "smallEgg") {
-            cookingTime = 6;
-            document.getElementById("eggAnswer").innerHTML = cookingTime + " minutes";
+            minutes = 6;
+            document.getElementById("eggAnswer").innerHTML = minutes + " minutes";
         }
         else if (eggSize === "mediumEgg") {
-            cookingTime = 7;
-            document.getElementById("eggAnswer").innerHTML = cookingTime + " minutes"; 
+            minutes = 7;
+            document.getElementById("eggAnswer").innerHTML = minutes + " minutes"; 
         }
         else {
-            cookingTime = 8;
-            document.getElementById("eggAnswer").innerHTML = cookingTime + " minutes";
+            minutes = 8;
+            document.getElementById("eggAnswer").innerHTML = minutes + " minutes";
         }
         
     }
     else if (document.getElementById("mediumBoiled").checked) {
         eggStyle ="mediumBoiled";
         if (eggSize === "smallEgg") {
-            cookingTime = 8;
-            document.getElementById("eggAnswer").innerHTML = cookingTime + " minutes";
+            minutes = 8;
+            document.getElementById("eggAnswer").innerHTML = minutes + " minutes";
         }
         else if (eggSize === "mediumEgg") {
-            cookingTime = 9;
-            document.getElementById("eggAnswer").innerHTML = cookingTime + " minutes"; 
+            minutes = 9;
+            document.getElementById("eggAnswer").innerHTML = minutes + " minutes"; 
         }
         else {
-            cookingTime = 10;
-            document.getElementById("eggAnswer").innerHTML = cookingTime + " minutes";
+            minutes = 10;
+            document.getElementById("eggAnswer").innerHTML = minutes + " minutes";
         }
     }
     else {
         eggStyle ="hardBoiled";
         if (eggSize === "smallEgg") {
-            cookingTime = 10;
-            document.getElementById("eggAnswer").innerHTML = cookingTime + " minutes";
+            minutes = 10;
+            document.getElementById("eggAnswer").innerHTML = minutes + " minutes";
         }
         else if (eggSize === "mediumEgg") {
-            cookingTime = 11;
-            document.getElementById("eggAnswer").innerHTML = cookingTime + " minutes"; 
+            minutes = 11;
+            document.getElementById("eggAnswer").innerHTML = minutes + " minutes"; 
         }
         else {
-            cookingTime = 12;
-            document.getElementById("eggAnswer").innerHTML = cookingTime + " minutes";
+            minutes = 12;
+            document.getElementById("eggAnswer").innerHTML = minutes + " minutes";
         }
     }
 }

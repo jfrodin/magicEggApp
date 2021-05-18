@@ -1,6 +1,12 @@
+body {
+    background-color:  #164A41 !important;
+    color: #FFF !important;
+}
 #app {
     width: 65vw;
+
 }
+
 #header {
     margin-top: 15vh;
 }
@@ -11,16 +17,21 @@
 .right-text {
     text-align: right;
 }
-.info {
-    text-decoration: wavy;
+.left-text {
+    text-align: left;
 }
-
-/*Blackish: #202020
-
-Dark Grey: #3F3F3F
-
-Medium Grey: #707070
-
-Egg Yellow: #FFD6C
-
-White: #FFFFFF*/
+.button {
+    margin-top: 5%;
+    background-color: #F1B24A;
+    border: #FFF 2px solid;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 15px;
+}
+.button:hover {
+    background-color: #f1b14ad7 !important
+}
