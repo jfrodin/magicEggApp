@@ -23,7 +23,7 @@ function calculateEggTime(){
         eggStyle ="softBoiled";
         if (eggSize === "smallEgg") {
             cookingTime = 6;
-            document.getElementById("eggAnswer").innerHTML = "You need to boil your eggs for " + cookingTime + " minutes";
+            document.getElementById("eggAnswer").innerHTML = cookingTime + " minutes";
         }
         else if (eggSize === "mediumEgg") {
             cookingTime = 7;
