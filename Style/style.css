@@ -8,7 +8,7 @@ body {
 }
 
 #header {
-    margin-top: 15vh;
+    margin-top: 10vh;
 }
 
 .center-text {
@@ -21,7 +21,8 @@ body {
     text-align: left;
 }
 .button {
-    margin-top: 5%;
+    margin-top: 10%;
+    margin-bottom: 5%;
     background-color: #F1B24A;
     border: #FFF 2px solid;
     color: white;
@@ -29,7 +30,7 @@ body {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 20px;
     border-radius: 15px;
 }
 .button:hover {
